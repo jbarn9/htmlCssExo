@@ -1,0 +1,16 @@
+table{
+    border:double violet 8px;
+    text-align: center;    
+    border-collapse: collapse;
+}
+
+thead, tbody, td, th{
+    border: 1px solid black;
+}
+thead{
+    background-color: rgb(165, 165, 227);
+}
+table caption{
+    color: violet;
+    font-weight: 600;
+}

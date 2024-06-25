@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+</head>
+<body>
+    <form action="GET">
+        <fieldset>
+            <legend>Info personnelles</legend>
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" placeholder="Ex. Louise" minlength="2" maxlength="20" name="prenom"><br>
+            </div>
+            <div>
+                <input type="text" placeholder="Ex. Dubois" minlength="2" maxlength="20" name="nom"><br>
+                <label for="nom">Nom</label>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Ex. louisedubois@hotmail.fr"><br>
+            </div>
+            <div>
+                <label for="tel">Numéro</label>
+                <input type="tel" name="tel" id="tel" placeholder="Ex. 06XXXXXXXX"><br>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" placeholder="Ex. P@ssWo4d"><br>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="text" name="age" id="age" placeholder="Ex. 15"><br>
+            </div>
+            <div>
+                <label for="comment">Laissez un commentaire :</label><br>
+                <textarea name="comment" id="comment" cols="70" rows="10" placeholder="J'adore ce que vous faites !"></textarea>
+            </div>
+            <div>
+                <label for="date">Date de mon commentaire</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="photo">Ma photo</label>
+                <input type="file" name="photo" id="photo" accept=".png .jpg .gif">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Vous préférez</legend>
+            <input type="checkbox" name="html" id="html"><label for="html">Le HTML</label><br>
+            <input type="checkbox" name="css" id="css"><label for="css">Le CSS</label><br>
+            <input type="checkbox" name="javascript" id="javascript"><label for="javascript">Le Javascript</label><br>
+            <input type="checkbox" name="nothing" id="nothing"><label for="nothing">Ne rien faire</label>
+        </fieldset>
+        <fieldset>
+            <legend>Vous vous levez</legend>
+            <input type="radio" name="morning" id="morning" checked><label for="morning">Le matin</label><br>
+            <input type="radio" name="midday" id="midday" checked><label for="midday">Le midi</label><br>
+            <input type="radio" name="evening" id="evening" checked><label for="evening">Le soir</label><br>
+            <input type="radio" name="late" id="late" checked><label for="late">En retard !</label>
+        </fieldset>
+        <fieldset>
+            <legend>Fin du formulaire</legend>
+            <label for="select">Vous en avez assez ?</label>
+            <select name="select" id="select">
+                <optgroup label="Team pas encore">
+                    <option value="more">J'en veux plus</option>
+                    <option value="super">C'est super !</option>
+                </optgroup>
+                <optgroup label="Team Oula">
+                    <option value="enough">J'en ai marre</option>
+                    <option value="please">Pitié !</option>
+                </optgroup>
+            </select><br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

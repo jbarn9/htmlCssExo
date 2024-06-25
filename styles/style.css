@@ -1,0 +1,42 @@
+h1{
+    color: red;
+    font-size: 3em;
+    text-align: center;
+}
+h1:hover{
+    color: green;
+}
+h1:active{
+    background-color: gray;
+}
+a:link {color: black;}
+a:visited {color: purple;}
+a:hover {color: red;}
+a:active {color: red;}
+h3{
+    color: blue;
+    font-size: 2em;
+}
+p{
+    background-color: gray;
+}
+article:nth-of-type(2) h3{
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}
+article:nth-last-child(1) p{
+    background-color: pink;
+}
+strong{
+    font-weight: 200;
+    color: yellowgreen;
+}
+em{
+    font-style: normal;
+    text-decoration: underline;
+    
+}
+img:hover{
+    visibility: hidden;
+}
